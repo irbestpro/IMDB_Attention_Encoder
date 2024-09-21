@@ -48,7 +48,7 @@ class Classifier():
         pickle.dump(self.encoder_model , open('./encoder_model.nila' , 'wb'))
         pickle.dump(self.dense_model , open('./dense_model.nila' , 'wb'))
 
-        plt.plot(range(0,len(self.train_acc)), self.train_acc , label = "Train Phase")
+        plt.plot(range(0,len(self.train_acc)), self.train_acc , label = "Training Phase")
         plt.plot(range(0,len(self.train_acc)), self.test_acc , label = "Test Phase")
         plt.title('Accuracy score of IMDB Benchmark sentiment classification')
         plt.legend()
